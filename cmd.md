@@ -6,22 +6,7 @@ Accéder à différentes commandes :
 * [Commandes créatif](https://mjccraft.github.io/cmd/creatif)
 * [Commandes survie](https://mjccraft.github.io/cmd/survie)
 
-Text
-Text
-Text
-Text
-Text
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-Text
+-----------
 
 ## Commandes générales
 
