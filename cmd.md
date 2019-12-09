@@ -23,6 +23,6 @@ Text
 .
 Text
 
-## Commandes generales
+## Commandes générales
 
 Commandes generales
