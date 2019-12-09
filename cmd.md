@@ -2,7 +2,7 @@
 
 Accéder à différentes commandes :
 
-* [Commandes générales](#general-commands)
+* [Commandes générales](#commandes-generales)
 * [Commandes créatif](https://mjccraft.github.io/cmd/creatif)
 * [Commandes survie](https://mjccraft.github.io/cmd/survie)
 
@@ -23,8 +23,6 @@ Text
 .
 Text
 
-(#general-commands)
-
-## Commandes générales
+## Commandes generales
 
 Commandes generales
