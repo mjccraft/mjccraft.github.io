@@ -1,7 +1,5 @@
 # Commandes des plots
 
-**Cette page n'est pas définitive et sera réarrangée.**
-
 ## Contenu
 ###### CLAIMING
  - [/plot buy](#buy)    
@@ -9,7 +7,8 @@
  - [/plot auto](#auto)    
  - [/plot delete](#delete)    
  - [/plot grant](#grant)    
- - [/plot setowner](#setowner)    
+ - [/plot setowner](#setowner)  
+ - [/plot download](#download)
 
 ###### TELEPORTATION
  - [/plot visit](#visit)    
@@ -608,6 +607,10 @@ plot flag list
 
 ***
 
+## Download
+#### Description
+***
+
 ## CONTINUE
 #### Description
 `Continue a plot that was previously marked as done`
@@ -741,7 +744,7 @@ NEW: `plots.alias.set` and `plots.alias.remove` (The old permission still work!)
 #### Permissions
 `plots.use`    
 ***
-
+ 
 ## WEANYWHERE
 #### Description
 `Force bypass of WorldEdit`
@@ -752,3 +755,6 @@ NEW: `plots.alias.set` and `plots.alias.remove` (The old permission still work!)
 #### Permissions
 `plots.worldedit.bypass`    
 ***
+
+
+
