@@ -93,6 +93,7 @@ Lorsque vous revendiquez un plot, il vous appartient et personne ne peut constru
  `/plot claim`
 #### Alias
 `[ claim,c ]`
+
 ***
 
 ## AUTO
@@ -113,6 +114,7 @@ Permet de visiter un plot. On peux donner le pseudo d'un joueur, le nom d'un plo
 `/plot visit [joueur|alias|id] [#]`    
 #### Alias
 `[ visit,v,tp,teleport,goto,home,h ]`
+
 ***
 
 ## SET
@@ -123,6 +125,7 @@ Permet de définir le biome, le nom et les flags.
 `/plot set <biome|alias|home|flag> <valeur...>`    
 #### Alias
 `[ set,s ]`
+
 ***
 
 ## CLEAR
@@ -225,6 +228,7 @@ Vous pouvez spécifier une direction (`n`,`e`,`w`,`s` ou `all`) et spécifier si
  - `/plot merge [all|n|e|s|w] [removeroads]`    
 #### Alias
 `[ merge,m ]`
+
 ***
 
 ## UNLINK
@@ -234,6 +238,7 @@ Sépare des plots qui ont été combinés.
 `/plot unlink`    
 #### Alias
 `[ unlink,u,unmerge ]`
+
 ***
 
 ## KICK
@@ -243,6 +248,7 @@ Ejecte un joueur du plot.
 `/plot kick <joueur>`    
 #### Alias
 `[ kick,k ]`
+
 ***
 
 ## LIKE
@@ -282,6 +288,7 @@ Permet de choisir une musique qui sera jouée sur le plot.
 `/plot music`    
 #### Alias
 `[ music ]`
+
 ***
 
 ## SETFLAG
@@ -306,6 +313,7 @@ Défini les flags d'un plot. Pour avoir une liste d'un flag, utilisez `/plot fla
  - 
 #### Alias
 `[ setflag,f,flag,setf ]`
+
 ***
 
 ## TARGET
@@ -315,6 +323,7 @@ Vise un plot avec votre compas.
 `/plot target <plot>`    
 #### Alias
 `[ target ]` 
+
 ***
 
 ## MOVE
@@ -324,6 +333,7 @@ Déplace un plot aux coordonnées précisées.
 - `/plot move <X;Z>`    
 #### Alias
 `[ move,debugmove ]`
+
 ***
 
 ## COPY
@@ -333,6 +343,7 @@ Copie un plot aux coordonnées précisées.
 `/plot copy <X;Z>`    
 #### Alias
 `[ copy,copypaste ]`
+
 ***
 
 ## CHAT
@@ -342,6 +353,7 @@ Actove/désactive le chat de plot (chat visible uniquement sur le plot).
 `/plot chat [on|off]`    
 #### Alias
 `[ chat ]`
+
 ***
 
 ## DONE
@@ -351,6 +363,7 @@ Marque un plot comme terminé.
 `/plot done`    
 #### Alias
 `[ done,submit ]`
+
 ***
 
 ## Download
@@ -380,6 +393,7 @@ Vous téléporte au milieu du plot actuel
 `/plot middle`    
 #### Alias
 `[ middle,center ]`
+
 ***
 
 ## SETOWNER
@@ -389,6 +403,7 @@ Change le propriétaire du plot.
 `/plot setowner <joueur>`    
 #### Alias
 `[ setowner,owner,so,seto ]`
+
 ***
 
 ## SETDESCRIPTION
@@ -398,18 +413,20 @@ Défini la description du plot.
 `/plot desc <description>`    
 #### Alias
 `[ setdescription,desc,setdesc,setd,description ]` 
+
 ***
 
 ## SETBIOME
 #### Description
-:warning:**Commande pour utilisateur avancé. Utilisez plutôt le menu si vous n'êtes pas sûr de vous.**
+:warning: **Commande pour utilisateur avancé. Utilisez plutôt le menu si vous n'êtes pas sûr de vous.**
 Défini le biome du plot. La liste des biomes est disponible [ici](https://minecraft-fr.gamepedia.com/Biome#ID_des_biomes) (utiliser la colonne *ID nominal*)
 #### Syntaxe    
 `/plot biome [biome]`    
 #### Alias
 `[ setbiome,biome,sb,setb,b ]`
 #### Permissions
-`plots.set.biome`    
+`plots.set.biome`   
+
 ***
 
 ## ALIAS
