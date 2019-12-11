@@ -424,69 +424,61 @@ Défini le biome du plot. La liste des biomes est disponible [ici](https://minec
 #### Syntaxe    
 `/plot biome [biome]`    
 #### Alias
-`[ setbiome,biome,sb,setb,b ]`
-#### Permissions
-`plots.set.biome`   
+`[ setbiome,biome,sb,setb,b ]``   
 
 ***
 
 ## ALIAS
 #### Description
-`Set the plot name`
+Défini le nom du plot.
 #### Syntaxe    
 `/plot alias set <alias>`    
 `/plot alias remove <alias>`    
 #### Alias
 `[ setalias,alias,sa,name,rename,setname,seta, nameplot ]`
-#### Permissions
-`plots.alias`    
-NEW: `plots.alias.set` and `plots.alias.remove` (The old permission still work!)    
+
 ***
 
 ## SETHOME
 #### Description
-`Set the plot home`
+Défini le point de téléportation du plot lorsqu'on s'y téléporte en utilisant [/plot visit](#visit)
 #### Syntaxe    
-`/plot sethome [none]`    
+`/plot sethome`    
 #### Alias
 `[ sethome,sh,seth ]`
-#### Permissions
-`plots.set.home`    
+    
 ***
 
 ## TOGGLE
 #### Description
-`Toggle per user settings`
+Active / désactive des paramètres utilisateurs :
+- `worldedit` : WorldEdit
+- `chat` : Le [chat de plot](#chat-1)
+- `titles` : Le texte affiché à l'écran quand on rentre dans un plot
+- `time` : Le changement de temps quand on rentre dans un plot avec un temps spécifique paramétré.  
 #### Syntaxe    
-`/plot toggle [worldedit|chat|chatspy|titles|time]`    
+`/plot toggle [worldedit|chat|titles|time]`    
 #### Alias
 `[ toggle,attribute ]`
-#### Permissions
-`plots.use`    
+
 ***
 
 ## HELP
 #### Description
-`Get this help menu`
+Affiche le menu d'aide du plugin.
 #### Syntaxe    
 `/plot help help [category|#]`    
 #### Alias
 `[ help,he,? ]`
-#### Permissions
-`plots.use`    
+  
 ***
  
 ## WEANYWHERE
 #### Description
-`Force bypass of WorldEdit`
+Autorise l'utilisation de WorldEdit partout sur le monde (même sur les routes et les plots d'autres joueurs).
 #### Syntaxe    
 `/plot weanywhere`    
 #### Alias
 `[ weanywhere,wea ]`
-#### Permissions
-`plots.worldedit.bypass`    
+
 ***
-
-
-
-
