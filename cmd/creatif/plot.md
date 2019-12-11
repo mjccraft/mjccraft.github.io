@@ -418,7 +418,8 @@ Défini la description du plot.
 
 ## SETBIOME
 #### Description
-:warning: **Commande pour utilisateur avancé. Utilisez plutôt le menu si vous n'êtes pas sûr de vous.**
+⚠️  **Commande pour utilisateur avancé. Utilisez plutôt le menu si vous n'êtes pas sûr de vous.**
+
 Défini le biome du plot. La liste des biomes est disponible [ici](https://minecraft-fr.gamepedia.com/Biome#ID_des_biomes) (utiliser la colonne *ID nominal*)
 #### Syntaxe    
 `/plot biome [biome]`    
@@ -485,6 +486,7 @@ NEW: `plots.alias.set` and `plots.alias.remove` (The old permission still work!)
 #### Permissions
 `plots.worldedit.bypass`    
 ***
+
 
 
 
