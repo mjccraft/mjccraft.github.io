@@ -5,45 +5,45 @@
 /f
 >Gérer les commandes de base des factions.
 
-/f?,h,help [page=X]
+/f?,h,help [page]
 >Demande de l'aide, affiche la liste des commandes de la page X.
 
-/f list [page=X]
+/f list [page]
 >Affiche la liste des factions de la page X.
 
-/f top <TopCategory*> [page=X]
+/f top <TopCategory*> [page]
 >Affiche le classement des factions de la page X (sans le " * ").
 
-/f f,faction [faction=you]
->Affiche les informations de votre faction.
+/f f,faction [faction]
+>Affiche les informations de votre faction ou de celle spécifiée.
 
-/f player [player=you]
->Affiche les informations de votre compte.
+/f player [player]
+>Affiche les informations de votre compte ou de celui spécifié.
 
-/f status [page=X] [faction=you] [sort=time]
->Affiche les statuts (page X).
+/f status [page] [faction] [sort]
+>Affiche les statuts.
 
-/f join <Nom_de_la_faction>
+/f join <Nom de la faction>
 >Rejoindre une faction.
 
 /f leave
 >Quitter votre faction.
 
-/f map [on|off=once]
->Affiche la carte avec les territoires [oui|non].
+/f map [on|off]
+>Affiche la carte avec les territoires.
 
 
 
 ## CREATION FACTION :
 
-/f create,new <name*> 
->Créer votre faction (sans le " * ").
+/f create,new <nom> 
+>Créer votre faction.
 
-/f name <new name*> [faction=you]
->Donne/remplace un nom à votre faction (sans le " * ").
+/f name <nouveau nom> [faction]
+>Défini/remplace le nom fr votre faction.
 
-/f description <desccription*>
->Changer la description de votre faction (sans le " * ").
+/f description <desccription>
+>Changer la description de votre faction.
 
 /f motd
 >Affiche le message de faction.
@@ -51,140 +51,112 @@
 /f motd [new=read]
 >Change le message de la faction.
 
-/f sethome *nom du home* [faction=you]
->Place un "home" de faction avec son nom.
+/f sethome <nom du home>
+>Place un "home" de faction avec le nom spécifié.
 
-/f unsethome *nom du home* [faction=you]
->Retire un home.
+/f unsethome <nom du home>
+>Supprimme un home de faction
 
 
 
 
 ## TERRITOIRE :
 
-/f seeChunk,sc [active=toggle]
->Détail le Chunk dans lequel vous vous trouvez.
+/f seeChunk,sc
+>Affiche les bordures des chunks près de vous.
 
-/f territorytitles,tt [on|off=toggle]
->Affiche [oui|non] les noms des territoires.
+/f territorytitles,tt [on|off]
+>Affiche les noms des territoires.
 
 /f claim
->Déclare que les chunks sélectionnés  appartiennent à votre faction.
+>Déclare que les chunks sélectionnés appartiennent à votre faction.
 
-/f claim one [faction=you]
->Déclare que le chunk sélectionné appartient  à votre faction.
+/f claim one
+>Déclare que le chunk sur lequel vous vous trouvez appartient à votre faction.
 
-/f claim auto [faction=you]
->Déclare que les chunks sur lesquels vous passez vous appartiennent.
+/f claim auto
+>Déclare que les chunks sur lesquels vous passez appartiennent à votre faction.
 
-/f claim fill [faction=you]
+/f claim fill
 >Déclare que tous les chunks entre deux points sélectionnés appartiennent à votre faction.
 
-/f claim square [radius=X] [faction=you]
->Déclare que tous les chunks dans un carré de X chunks de coté ("rayon") appartiennent à votre faction.
+/f claim square [côté]
+>Déclare que tous les chunks dans un carré de X chunks de coté appartiennent à votre faction.
 
-/f claim circle [radius=X] [faction=you]
+/f claim circle [rayon]
 >Déclare que tous les chunks dans un cercle de X chunks de rayon appartiennent à votre faction.
-
-/f claim all <all|map> <faction*>
->Déclare que <tous|toutes la carte> appartient à une faction (sans le " * ").
 
 /f unclaim
 >Restaure les chunks sélectionnés.
 
 /f unclaim one
->Restaure le chunk sélectionné.
+>Restaure le chunk sur lequel vous êtes.
 
 /f unclaim auto
->restaure les chunks sur lesquels vous marchez.
+>restaure les chunks sur lesquels vous passez.
 
 /f unclaim fill
 >Restaure les chunks entre deux points sélectionnés.
 
-/f unclaim square [radius=X]
->Restaure les chunks dans un carré de X chunks de coté ("rayon").
+/f unclaim square [côté]
+>Restaure les chunks dans un carré de X chunks de coté.
 
-/f unclaim circle [radius=X]
+/f unclaim circle [rayon]
 >Restaure les chunks dans un cercle de X chunks de rayon.
 
-/f unclaim all <all|map> <faction*>
->Restaure tous les chunks de la faction|tous les chunks d'une faction présents sur la carte (sans le " * " . 
+/f unclaim all
+>Restaure tous les chunks de la faction. 
 
-## MANAGEMENT DES MEMBRES :
+## GESTION DES MEMBRES :
 
 /f invite
 >Gère les invitations.
 
-/f invite list [page=X] [faction=you]
->Affiche les invitations envoyées sur la page sélectionnées.
+/f invite list [page]
+>Affiche la liste des invitations envoyées.
 
-/f invite add <pseudo_du_joueur> 
+/f invite add <pseudo> 
 >Invite un joueur dans votre faction.
 
 /f invite remove <player|all>
->Annule l'invitation envoyée à un joueur|toutes les invitations.
+>Annule l'invitation envoyée à un joueur ou toutes les invitations.
 
-/f kick *nom du joueur*
+/f kick <pseudo>
 >Exclu un joueur de votre faction.
-
-/f title <nom_du_joueur> [title=?]
->Attribue un grade à un joueur.
 
 ## GRADES :
 
 /f rank
 >Gérer les grades de votre faction.
 
-/f rank set <Pseudo_du_joueur> <Nom_du_garde>
->Attribuer un rade à un joueur (leader[chef], Officer[officier], Member[membre], Recruit[recrue]).
+/f rank set <pseudo> <grade>
+>Attribuer un grade à un joueur (`Leader`: Chef, `Officer`: Officier, `Member`: Membre, `Recruit`: Recrue).
 
-/f rank show <Pseudo_du_joueur>
->Affiche le grade du joueur.
+/f rank show <pseudo>
+>Affiche le grade d'un joueur.
 
-/f rank list [page=X] [faction=you]
->Affiche les grades des membres de votre faction sur la page X.
-
-/f rank edit
->Modifier les grades (les permissions disponibles en fonction des grades.
-
-/f rank edit create <Pseudo_du_joueur> <priority*> [prefix=Nom_du_préfix]
->Créer un nouveau grade avec son statut plus ou moins important (sans le " * " ).
-
-/f rank delete <Nom_du_grade> [faction=you]
->Supprime un grade de votre faction.
-
-/f rank edit name <Nom_du_grade> <Nouveau_nom>
->Renomme un grade.
-
-/f rank edit prefix <Nom_du_grade> <Nouveau_préfix>
->Renomme le préfix d'un grade.
-
-/f rank edit priority <Nom_du_grade> <Nouveau_rang_de_priorité>
->Redéfinie l'importance du grade dans votre faction.
-
+/f rank list [page]
+>Affiche les grades des membres de votre faction.
 
 ## ARGENT
 
 /f money
 >Gérer l'argent de votre faction.
 
-/f money balance [faction=you]
+/f money balance
 >Affiche l'argent de votre faction.
 
-/f money deposit <X_€> [faction=you]
+/f money deposit <montant>
 >Déposer un montant de X€ dans la banque de votre faction.
 
-/f money withdraw <X_€> [faction=you]
+/f money withdraw <montant>
 >Retirer un montant de X€ de la banque de votre faction.
 
-/f money ff <X_€> <Nom_de_votre_faction> <Nom_de_l'autre_faction>
+/f money ff <montant> <Nom_de_votre_faction> <Nom_de_l'autre_faction>
 >Transfert un montant de X€ de votre faction à une autre faction.
 
-/f money fp <X_€> <Nom_de_votre_faction> <Pseudo_du_joueur>
+/f money fp <montant> <Nom_de_votre_faction> <pseudo>
 >Transfert d'un montant de X€ de votre faction à un joueur.
-
-/money pf <X_€> <Votre_pseudo> <Nom_de_la_faction>
->Transfert d'un montant de X€ de votre compte à une faction.
 
 
 ## RELATIONS :
@@ -192,36 +164,32 @@
 /f relation
 >Gérer les relations entre factions.
 
-/f relation set <Nom_de_la_faction> <titre_de_relation>
->Demande un statut de relation à entre votre faction et une autre.
+/f relation set <faction> <relation>
+>Demande un statut de relation à entre votre faction et une autre. (Ally|Truce|Neutral|Enemy)
 
-/f relation liste [page=X] [faction=you] [relations=?]
->Affiche la liste des relations (Ally|Truce|Neutral|Enemy) de la page X entre votre factions et les autres. 
+/f relation liste [page]
+>Affiche la liste des relations (Ally|Truce|Neutral|Enemy) entre votre factions et les autres. 
 
-/f relation wishes [page=X] [faction=you]
->Affiche les demandes de relation de la page X entre votre faction et les autres.
+/f relation wishes [page]
+>Affiche les demandes de relation entre votre faction et les autres.
 
 
 ## WARPS :
 
-/f warp 
->Utilise un warp.
+/f warp go <Nom_du_warp>
+>Téléporte à un warp.
 
-/f warp go <Nom_du_warp> [faction=you]
->Téléport à un warp
+/f warp list [page]
+>Affiche la liste des warps de votre faction.
 
-/f warp list [faction=you] [page=X]
->Affiche la liste de vos warp (page X).
+/f warp add,create <Nom_du_warp>
+>Créer un nouveau warp de faction.
 
-/f warp add,create <Nom_du_warp> [faction=you]
->Ajout d'un nouveau warp.
-
-/f warp remove <Nom_du_warp> [faction=you]
->Supprimer un warp.
+/f warp remove <Nom_du_warp>
+>Supprime un warp de faction.
 
 
 ## ACCES :
-
 
 /f access
 >Gérer les accès.
@@ -229,64 +197,52 @@
 /f access view
 >Voir les accès.
 
-/f access player <pseudo> [yes|no=toggle]
+/f access player <pseudo>
 >Accorder un accès à un joueur.
 
-/f access faction >Nom_de_la_faction> [yes|no=toggle]
->Accorde un accès à une faction.
 
+## FLAGS :
 
-## Bannières :
+*Les flags sont les propriétés de la faction. Par exemple, l'activation du pvp entre membres est un flag*
 
 /f flag
->Gérer la bannière de faction.
+>Gérer les flags de la faction.
 
-/f flag list [page=X]
-> Affiche les bannières (page X).
+/f flag list [page]
+> Affiche la liste des flags.
 
-/f flag show [faction=you] [page=X]
->Affiche la  bannière de faction.
+/f flag show [page]
+>Affiche la liste des flags de votre faction.
 
-/f flag set <flag*> <yes|no> [faction=you]
->Définir une bannière de faction.
+/f flag set <flag> <yes|no>
+>Définir un flag de la faction.
 
 
 ## AUTRE :
 
-/f fly
-
 /f unstuck
 >Téléporte dans la zone déserte la plus proche.
 
-/f override,admin [on|off=flip]
->Active ou non le mode substitution.
-
-/f disband <Nom_de_la_faction> [confirmation]
+/f disband <faction> [confirmation]
 >Dissous une faction.
-
-/f powerBoost
->Gérer les accélérant de pouvoir. 
-
-/f setpower,sp
->Met en place un pouvoir.
-
-/f config
->Modifier les configurations
-
-/f clean
->Supprime la base de données des factions.
-
-/f v,version
->Affiche la version du plugin faction.
-
+  
 ## EXPICATIONS PLUS DETAILLEES :
 
+**La partie suivante à été traduite avec automatiquement et peut comporter des erreurs. En cas de doute, n'hésitez pas à contecter un administrateur.**
 
-Le plugin permet aux joueurs de se regrouper dans des factions. Ils revendiquent leurs territoires et construisent leurs bases. Ce plugin possède un système d'[antigriefing](https://github.com/mjccraft/mjccraft.github.io/blob/master/Définitions). Les joueurs peuvent gérer les permissions des membres de leur faction à l'aide de grades.
-Lorsque vous entrez la commande **/f** la liste de toutes les commandes liées aux factions s'affichent. Entrez **/f ?,2** affichera la seconde page. la commande **/f list** affiche la liste des faction sur plusieurs pages. Si vous voulez  avoir un classement plus détaillé, entrez la commande **/f top** qui affichera le classement des factions dans des catégories. Pour obtenir plus d'informations sur votre faction entrez **/f f**, mais si vous voulez plus d'informations sur une autre faction entrez **/f f [Nom_de_la_faction]**. Egalement, la commande **/f player** affichera les informations de votre compte et si vous voulez les informations sur le compte d'un autre joueur entrez **/f palyer [Nom_du_joueur]**. Si vous voulez les informations quant aux joueurs présents dans votre faction, entrez **/f status [page]**, la liste s'affichera sur plusieurs pages donc choisissez la page que vous voulez observer. Pour obtenir les informations de joueurs présents dans une autre faction entrez **/f status [page] [Nom_de_la_faction]**, ici également il vous faudra choisir une page.
-Une faction peut posséder des [warps](https://github.com/mjccraft/mjccraft.github.io/edit/master/Définitions). Pour voir les warps de votre faction entrez **/warp list**. Pour vous téléporter à un warp entrez **/f warp go <Nom_du_warp>**. Tout les joueurs avec les permissions des "warps" peuvent se téléporter à ceux de leurs faction. Si vous posséder la permission "setwarp" alors vous pouvez créer/retirer des warps avec l'aide des commandes **/f warp add** et **/f warp remove**. Il y a un nombre maximum de warps disponibles définie par les administrateurs du serveur.
-En entrant **/f craete <Nom_de_la_faction>** vous créez ainsi votre faction. Si  vous voulez renomer votre faction entrez **/f name <Nouveau_nom>**. Pour changer la description publique de votre faction entrez **/f desc <Description_de_la_faction>**. Vous pouvez voir le message journalier de votre faction en entrant **/f motd** et vous pouvez en créer un nouveau en entrant **/f motd <Nouveau_motd>**. Vous pouvez utiliser des couleurs dans vos messages journaliers.
-Vous pouvez placer un "home" de faction en entrant **/f sethome Nom_du_home** alors le home se placera à votre position. Vous pouvez placer un nouveau home en entrant ainsi la même commande **/f sethome Nom_du_home** ou vous pouvez en supprimer un ancien en utilisant la commande **/f unsethome Nom_du_home**.
+Le plugin permet aux joueurs de se regrouper dans des factions, qui revendiquent des territoires et construisent leurs bases.
+Ce plugin possède un système d'[antigriefing](https://mjccraft.github.io/lexique#griefing) qui empêche les joueurs n'appartenant pas à une faction de construire dans leur territoire. 
+Les [grades](https://mjccraft.github.io/cmd/survie/faction#grades) permettent de gérer les permissions des membres d'une faction.
+
+La commande `/f` permet d'afficher la liste de toutes les commandes liées aux factions. Entrez `/f ? 2` pour afficher la seconde page.
+La commande `/f list` affiche la liste des faction sur plusieurs pages. Si vous voulez  avoir un classement plus détaillé, entrez la commande `/f top` qui affichera le classement des factions dans des catégories. Pour obtenir plus d'informations sur votre faction entrez `/f f`, mais si vous voulez plus d'informations sur une autre faction entrez `/f f [Nom_de_la_faction]`. 
+
+Egalement, la commande `/f player` affichera les informations de votre compte. Si vous voulez les informations sur le compte d'un autre joueur entrez `/f palyer [Nom_du_joueur]`. Si vous voulez les informations quant aux joueurs présents dans votre faction, entrez `/f status [page]`, la liste s'affichera sur plusieurs pages donc choisissez la page que vous voulez observer. 
+
+Une faction peut posséder des [warps](https://mjccraft.github.io/lexique#warps). Pour voir les warps de votre faction entrez `/warp list`. Pour vous téléporter à un warp entrez `/f warp go <Nom_du_warp>`. Si vous possédez la permission, vous pouvez créer/retirer des warps avec l'aide des commandes `/f warp add` et `/f warp remove`. Il y a un maximum de warps par faction défini par les administrateurs (renseigner plus tard).
+
+Pour changer la description publique de votre faction entrez `/f desc <Description_de_la_faction>`. Vous pouvez voir le message journalier de votre faction en entrant `/f motd` et vous pouvez en créer un nouveau en entrant `/f motd <Nouveau_motd>`. Vous pouvez utiliser des couleurs dans vos messages journaliers.
+Vous pouvez placer un [home](https://mjccraft.github.io/lexique#home) de faction en entrant `/f sethome Nom_du_home` alors le home se placera à votre position. Vous pouvez placer un nouveau home en entrant ainsi la même commande **/f sethome Nom_du_home** ou vous pouvez en supprimer un ancien en utilisant la commande **/f unsethome Nom_du_home**.
 Afin d'inviter un joueur dans votre faction entrez **/f invite add <Nom_du_joueur>**, ainsi vous ajoutez une invitation à la liste d'invitation. Lorsque vous désirez savoir la liste des personnes que vous avez invitées entrez **/f invite list**. Donc si vous voulez gérer les invitations envoyées de cette liste vous pouvez en retirer avec la commande **/f invite remove <Nom_du_joueur>** ou si vous voulez toutes les supprimées untilisez la commande **/f invite remove all**.
 Entrez la commande **/f kick <Nom_du_joueur>** afin d'exclure un joueur de votre faction.
 Vous pouvez attribuer des titres au membres de votre faction en entrant la commande **/f title <Nom_du_joueur> [Nom_du_titre]** mais si vous voulez supprimer le titre d'un joueur utiliser la commande **/f title <Nom_du_joueur>**. Vous pouvez utiliser des couleurs pour les titres.
