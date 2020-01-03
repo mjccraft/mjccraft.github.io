@@ -1,6 +1,7 @@
 ## Bienvenue sur la documentation du serveur MJCCraft !
 
 Cliquez [ici](#index) pour accéder à l'index.
+SNCF
 Ceci est un test.[^1]
 
 ## Index
@@ -26,4 +27,5 @@ Ceci est un test.[^1]
   * [Monde Mini jeux](https://mjccraft.github.io/mini-jeux/admin)
 
 [^1]: Ceci est une note
+
 *[SNCF]: Société Nationale des Chemins de fer Français
