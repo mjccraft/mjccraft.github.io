@@ -1,7 +1,34 @@
 ## Bienvenue sur la documentation du serveur MJCCraft !
 
 Cliquez [ici](#index) pour accéder à l'index.
+Cliquez [ici](https://mjccraft.github.io/lexique) pour accéder au lexique.
 
+## Syntaxe des commandes
+#### Arguments
+Une commande est généralement constituée de plusieurs arguments, qui peuvent être obligatoires ou optionnels.
+Exemple :
+`/test <argument obligatoire> [argument optionnel]`
+
+Vous aurez parfois plusieurs choix pour un argument, ils seront alors séparés par ceci : `|`
+Exemple :
+`/test [choix 1|choix 2|choix 3] <true|false>`
+
+#### Alias
+Parfois la même commande peut être utilisée avec différents noms, qui seront séparés par des virgules ou spécifiés à côté.
+Exemple :
+> `/plotme,plot,p`
+
+>`/plot`
+> **Alias :** `[ plotme,p ]`
+
+#### Abréviations
+Des abréviations sont parfois utilisées pour réduire la taille de la commande :
+
+|Abbréviation|Signification|Valeur attendue|
+|:-----:|:-----:|:-----:|
+|`#`|Nombre / Numéro|Un nombre entier|
+
+*Ce tableau regroupe les différentes abréviations que vous pourrez rencontrer sur le wiki. N'hésitez pas à contacter un administrateur si certaines ne sont pas répertoriées.*
 ## Index
 
 **Mondes :**
