@@ -10,13 +10,7 @@
 
 ~~Texte barré~~
 
-==Texte surligné==
-
 > Texte cité
-
-Texte ~en indice~
-
-Puissance : 10^5^
 
 ## Liste
 
@@ -29,8 +23,8 @@ Puissance : 10^5^
 3. Texte 3
 
 - Texte 1
- * Texte 2
-  + Texte 3
+  - Texte 2
+    - Texte 3
  
 - [x] Case cochée
 - [ ] Case non cochée
@@ -42,7 +36,7 @@ Ceci est [un lien](https://example.com)
 Ceci est [Un lien vers l'ancre Syntaxe](#syntaxe)
 
 Ceci est une image :
-![Texte ALT](example.com/image.jpg)
+![Texte ALT](https://freight.cargo.site/w/750/i/c8f101874babaec39278baa377021072a106b7cd837330f72a3156935a733c8a/DSC_0858.jpg)
 
 ## Définitions, notes et abbréviations
 
