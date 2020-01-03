@@ -226,7 +226,7 @@
 /f disband <faction> [confirmation]
 >Dissous une faction.
   
-## EXPICATIONS PLUS DETAILLEES :
+## EXPLICATIONS PLUS DETAILLEES :
 
 **La partie suivante à été traduite avec automatiquement et peut comporter des erreurs. En cas de doute, n'hésitez pas à contecter un administrateur.**
 
@@ -259,7 +259,13 @@ Vous ne pouvez revendiquer des territoires que lorsque vous avez du [pouvoir](ht
 
 Lorsque vous désirez autoriser l'accès à quelqu'un sur certains chunks au lieu de le rendre public à toute autre faction, entrez sur le chunk en question `/f access player <pseudo> yes`. De la même manière, si vous voulez refuser l'accès à un joueur sur certains chunks, utilisez la commande `/f access player <pseudo> no`sur le chunk en question. Vous pouvez effectuer la même chose mais cette fois ci avec l'entièreté d'une faction. Par exemple, si vous êtes allié avec une faction et que vous désirez autoriser ses membres à pénétrer sur certains de vos chunks, entrez `/f access faction <Nom_de_la_faction> yes`, et de même si vous voulez lui interdire de pénétrer sur certains de vos chunks, entrez `/f access faction <Nom_de_la_faction> no`. Attention, ces commandes autorisent/interdisent l'accès uniquement sur le chunk sur lequel vous vous trouvez. Pour voir la liste des autorisations et des interdictions d'accès sur le chunk où vous vous trouvez, entrez `/f access view`.
 
-Deux factions peuvent avoir des relations. Par défaut, deux faction ont une relation neutre, mais elle peut être changer par ennemie, allié ou trêve. La relation définie pour deux factions correspond à la demande la plus basse. Par exemple, si la faction 1 demande à être alliée alors que la faction 2 demande à être ennemie, la relation définie sera ennemie.
+Deux factions peuvent avoir des relations. Par défaut, deux faction ont une relation neutre (neutral), mais elle peut être changer par ennemie (enemy), allié (ally) ou trêve (truce). La relation définie pour deux factions correspond à la demande la plus basse. Par exemple, si la faction 1 demande à être alliée alors que la faction 2 demande à être ennemie, la relation définie sera ennemie.
+
+Voeux|**Enemie**|**Neutre**|**Trêve**|**Allié**
+**Enemie**|Enemie|Enemie|Enemie|Enemie
+**Neutre**|Enemie|Neutre|Neutre|Neutre
+**Trêve**|Enemie|Neutre|Trêve|Trêve
+**Allié**|Enemie|Neutre|Trêve|Allié
 
 Afin de faire une requête de relation à une faction, entrez `/f relation set <Nom_de_la_faction> <Nom_de_la_relation>`. Si vous désirez voir la liste de vos relations, entrez `/f relation list`, pour afficher la page suivante, entrez `/f relation list 2`. Afin de voir la liste des relations précises, entrez `/f relation list <Nom_de_la_relation>` ou pour voir la relation que vous avez défini avec une autre faction, entrez `/f relation list <Nom_de_la_faction>`. 
 
