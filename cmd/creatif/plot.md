@@ -293,7 +293,7 @@ Permet de choisir une musique qui sera jouée sur le plot.
 
 ## SETFLAG
 #### Description
-Défini les flags d'un plot. Pour avoir une liste d'un flag, utilisez `/plot flag list`. Pour plus d'information sur les flags, voir [Flags](https://mjccraft.github.io/monde/creatif#flags).
+Défini les flags d'un plot. Pour la liste des flag, utilisez `/plot flag list`. Pour plus d'information sur les flags, voir [Flags](https://mjccraft.github.io/lexique#flag).
 ##### Exemples
 ``` java
 /plot flag set fly true
