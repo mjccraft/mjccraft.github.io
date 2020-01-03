@@ -165,7 +165,7 @@
 >Gérer les relations entre factions.
 
 /f relation set <faction> <relation>
->Demande un statut de relation à entre votre faction et une autre. (Ally||Truce||Neutral||Enemy)
+>Demande un statut de relation à entre votre faction et une autre. (Ally\|Truce\|Neutral\|Enemy)
 
 /f relation liste [page]
 >Affiche la liste des relations entre votre factions et les autres. 
