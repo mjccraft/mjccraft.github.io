@@ -4,6 +4,8 @@ Cliquez [ici](#index) pour accéder à l'index.
 
 Cliquez [ici](https://mjccraft.github.io/lexique) pour accéder au lexique.
 
+Cliquez [ici](https://mjccraft.github.io/regles.html) pour accéder aux règles.
+
 ## Syntaxe des commandes
 #### Arguments
 Une commande est généralement constituée de plusieurs arguments, qui peuvent être obligatoires ou optionnels.
