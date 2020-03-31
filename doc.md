@@ -46,7 +46,7 @@ Des abréviations sont parfois utilisées pour réduire la taille de la commande
   * [Mini jeux](https://mjccraft.github.io/monde/mini-jeux)
 
 **Commandes :**
-  * [Commandes générales](https://mjccraft.github.io/cmd)
+  * [Commandes générales](https://mjccraft.github.io/doc/cmd)
   * [Monde Survie](https://mjccraft.github.io/doc/survie)
   * [Monde Créatif](https://mjccraft.github.io/doc/creatif)
   * [Monde Mini jeux](https://mjccraft.github.io/doc/mini-jeux)
