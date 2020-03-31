@@ -1,0 +1,158 @@
+body{
+	background-color:#FAFAFA;
+}
+div.Container{
+	float: center;
+	display:block;
+	border:black solid 2px;
+	border-radius: 5px;
+	background-color:#d0cccb;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-left:20%;
+	margin-right:20%;
+}
+*{
+	text-align: center;
+}
+
+div.mainTopContainer{
+	display: flex;
+	width: 730px;
+	margin: 0 auto;
+	margin-bottom: 10px
+}
+
+div.stuffMainContainer{
+	flex:1;
+	display: flex;
+	margin-right:20px;
+}
+
+div.craftingSystemContainer{
+	flex:1;
+	display: block;
+}
+
+div.ArmorSlotContainer{
+	flex:0.3;
+	display:flex;
+	flex-direction: column;
+	
+}
+
+div.secondHandSlotContainer{
+	flex:0.3;
+	display:flex;
+	flex-direction: column-reverse;
+}
+
+div.picturePlayer{
+	flex:1;
+	border:solid black 1px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color: #FFFFFF;
+}
+
+div.ArmorSlot{
+	background-color: #FFFFFF;
+	border:black solid 2px;
+	height:80px;
+	width:80px;
+	margin:2px;
+}
+
+img.apercu{
+	margin-top:25%;
+}
+
+div.craftingSystem{
+	margin-top:12%;
+	flex:1;
+	display: flex;
+}
+
+div.inputItems{
+}
+
+p.connexion{
+	font-family: 'MinecraftiaRegular';
+   	font-weight: normal;
+   	font-style: normal;
+   	text-align:center;
+}
+
+img.LogIn{
+	border:black solid 2px;
+	background-color: #FFFFFF;
+}
+
+div.arrow{
+	padding-top:35%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+div.CraftRecette{
+	flex:0.3;
+	border:black solid 2px;
+	height:80px;
+	width:80px;
+	margin-top:22px;
+	background-color: #FFFFFF;
+}
+ div.result{
+ 	margin-top:92px;
+ 	background-color: #FFFFFF;
+	border:black solid 2px;
+	height:80px;
+	width:80px;
+ }
+*{
+	text-align: center;
+}
+
+div.inventoryMainContainer{
+	background-color: #d0cccb;
+	position:center;
+	display:block;
+	padding:2px;
+	margin:0 auto;
+	max-width:730px;
+}
+
+div.inventoryContainer{
+	margin:auto;
+	flex:1;
+	display:block;
+}
+
+div.hotBarContainer{
+	flex:0.25;
+	display: flex;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+div.firstLign{
+	flex:1;
+	display:flex;
+}
+
+div.secondLign{
+	flex:1;
+	display:flex;
+}
+
+div.thirdLign{
+	flex:1;
+	display:flex;
+}
+
+div.slot{
+	background-color: #FFFFFF;
+	border:black solid 2px;
+	height:80px;
+	width:80px;
+	margin:1px;
+}
