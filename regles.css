@@ -1,0 +1,89 @@
+header
+{
+	background-color: rgb(195,195,195);
+	display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+}
+
+
+/*Logo*/
+#logo img
+{
+	height: 80px;
+	width: 122px;
+	margin: 5px;
+}
+
+header nav ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+header nav li
+{
+	margin-right:2em;
+}
+
+header nav a
+{
+	font-family: impact,arial,serif;
+	font-size: 2em;
+	color: rgb(128,128,128);
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+
+header nav a:hover
+{
+	color: rgb(255,255,108);
+	border-bottom: 3px rgb(255,255,108) solid;
+}
+
+body
+{
+	background-color: #D2D2D2;
+}
+
+.contenu
+{
+	font-family: arial,serif;
+	background-color: #E6E6E6;
+	box-shadow: 2px 2px 3px #5A5A5A;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	padding: 10px 2.5% 10px 2.5%;
+}
+
+h1
+{
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+p
+{
+	font-size: 1.1em;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+h2
+{
+	text-decoration: underline;
+}
+
+.note
+{
+	font-style: italic;
+	font-size: 0.9em;
+}
