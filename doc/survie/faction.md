@@ -232,7 +232,7 @@
 
 Le plugin permet aux joueurs de se regrouper dans des factions, qui revendiquent des territoires et construisent leurs bases.
 Ce plugin possède un système d'[antigriefing](https://mjccraft.github.io/lexique#griefing) qui empêche les joueurs n'appartenant pas à une faction de construire dans leur territoire. 
-Les [grades](https://mjccraft.github.io/cmd/survie/faction#grades-) permettent de gérer les permissions des membres d'une faction.
+Les [grades](https://mjccraft.github.io/doc/survie/faction#grades-) permettent de gérer les permissions des membres d'une faction.
 
 La commande `/f` permet d'afficher la liste de toutes les commandes liées aux factions. Entrez `/f ? 2` pour afficher la seconde page.
 La commande `/f list` affiche la liste des faction sur plusieurs pages. Si vous voulez  avoir un classement plus détaillé, entrez la commande `/f top` qui affichera le classement des factions dans des catégories. Pour obtenir plus d'informations sur votre faction entrez `/f f`, mais si vous voulez plus d'informations sur une autre faction entrez `/f f [Nom_de_la_faction]`. 

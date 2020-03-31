@@ -45,15 +45,15 @@ Des abréviations sont parfois utilisées pour réduire la taille de la commande
 
 **Commandes :**
   * [Commandes générales](https://mjccraft.github.io/cmd)
-  * [Monde Survie](https://mjccraft.github.io/cmd/survie)
-  * [Monde Créatif](https://mjccraft.github.io/cmd/creatif)
-  * [Monde Mini jeux](https://mjccraft.github.io/cmd/mini-jeux)
-  * [PlotMe](https://mjccraft.github.io/cmd/creatif/plot)
-  * [WorldEdit](https://mjccraft.github.io/cmd/creatif/worldedit)
-  * [Faction](https://mjccraft.github.io/cmd/survie/faction)
+  * [Monde Survie](https://mjccraft.github.io/doc/survie)
+  * [Monde Créatif](https://mjccraft.github.io/doc/creatif)
+  * [Monde Mini jeux](https://mjccraft.github.io/doc/mini-jeux)
+  * [PlotMe](https://mjccraft.github.io/doc/creatif/plot)
+  * [WorldEdit](https://mjccraft.github.io/doc/creatif/worldedit)
+  * [Faction](https://mjccraft.github.io/doc/survie/faction)
 
 **Commandes d'administration :**
-  * [Administration générale](https://mjccraft.github.io/cmd/admin)
-  * [Monde Survie](https://mjccraft.github.io/cmd/survie/admin)
-  * [Monde Créatif](https://mjccraft.github.io/cmd/creatif/admin)
+  * [Administration générale](https://mjccraft.github.io/doc/admin)
+  * [Monde Survie](https://mjccraft.github.io/doc/survie/admin)
+  * [Monde Créatif](https://mjccraft.github.io/doc/creatif/admin)
   * [Monde Mini jeux](https://mjccraft.github.io/mini-jeux/admin)
