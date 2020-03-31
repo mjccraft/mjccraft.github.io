@@ -1,8 +1,3 @@
-body
-{
-	background-color: #D2D2D2;
-}
-
 .contenu
 {
 	font-family: arial,serif;
@@ -16,7 +11,6 @@ body
 h1
 {
 	text-align: center;
-	text-decoration: underline;
 	margin-bottom: 20px;
 }
 
@@ -28,11 +22,6 @@ p
 strong
 {
 	font-weight: bold;
-}
-
-h2
-{
-	text-decoration: underline;
 }
 
 .note

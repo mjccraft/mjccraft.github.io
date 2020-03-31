@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiki : Monde créatif</title>
+	<link rel="stylesheet" type="text/css" href="PC.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css"/> 
+	<script type="text/javascript" src="script/menuderoulant.js"></script>
+	<script language="JavaScript">
+		<!--
+		//PLF-/
+		function menuderoulant(selection){
+		window.location=selection.options[selection.selectedIndex].value;
+		}
+		//-->
+	</script>	
+</head>
+<body>
+	
+	<div class="Container">
+		<div class="title">
+			<p class="titre">Wiki : monde créatif</p>
+		</div>
+		<form class="selector" name="form1">
+			<div align="center">
+				<select class="choice" name="menu" onChange="menuderoulant(this)">
+					<option value="#intro">Introduction</option>
+					<option value="#OP">Obtention des parcelles </option>
+					<option value="#TP">Téléportation</option>
+					<option value="#P">Paramètres</option>
+					<option value="#C">Discussion</option>
+					<option value="#A">Apparence</option>
+					<option value="#I">Informations</option>
+					<option value="#ADM">Administration</option>
+				</select>
+			</div>
+		</form>
+		<div class=Introduction id="intro">
+			<p class="T"> Introduction</p>
+			<p class="texte">Le monde créatif met à votre disposition une parcelle de 48 x 48 blocks. Vous pouvez y construire ce que vous désirez (dans la limite du raisonnable). Vous pouvez également acheter d'autres parcelles (vous pouvez en posséder jusqu'à 4). Vous pouvez visiter les parcelles des autres joueurs. Des outils de construction et de décorations sont mis à disposition tel que "World edit" et un accès aux bannières et aux têtes de joueurs plus rapide. Des évènements de constructions sont mis en place, avec en prime pour le(s) gagnant(s), l'exposition de leur(s) construction(s) dans le hub.</p>
+		</div>
+		<hr class="Separator" />
+		<p class="T">Gestion des parcelles</p>
+		<div id="OP">
+			<div class="definition">
+				<p class="cmd">/plot buy </p>
+				<p class="def">Achète le plot sur lequel vous vous trouvez (si il est à vendre). </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot claim  </p>
+				<p class="def">Revendique le plot sur lequel vous êtes si il n’a pas de propriétaire. Lorsque vous revendiquez un plot, il vous appartient et personne ne peut construire dessus à part vous et ceux que vous autorisez.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot auto   </p>
+				<p class="def">Revendique automatiquement le plot le plus proche du spawn. Il est possible de spécifier une taille pour revendiquer plusieurs plots si besoin.   </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot delete   </p>
+				<p class="def">Supprime le plot et le rend de nouveau revendiquable (vous n’en serez plus le propriétaire). Cette action est irréversible. Cette commande demande une confirmation.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot setowner   </p>
+				<p class="def">Change le propriétaire du plot.   </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot setowner   </p>
+				<p class="def">Change le propriétaire du plot.   </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot download    </p>
+				<p class="def">Créer un fichier .schematic de votre plot (utilisable par WorldEdit, MCEdit, etc) et génère un lien pour le télécharger.</p>
+			</div>
+		</div>
+		<div id="TP">
+			<p class="T">Téléportation</p>
+			<div class="definition">
+				<p class="cmd">/plot visit     </p>
+				<p class="def">Permet de visiter un plot. On peux donner le pseudo d’un joueur, le nom d’un plot (alias) ou son id. </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot kick     </p>
+				<p class="def">Ejecte un joueur du plot. </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot middle    </p>
+				<p class="def">Vous téléporte au milieu du plot actuel. </p>
+			</div>
+		</div>
+		<div id="P">
+			<p class="T">Paramètres</p>
+			<div class="definition">
+				<p class="cmd">/plot trust    </p>
+				<p class="def">Autorise un joueur à construire dans un plot même si le propriétaire n’est pas en ligne. </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot add   </p>
+				<p class="def">Autorise un joueur à construire sur le plot uniquement lorsque le propriétaire est en ligne.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot deny     </p>
+				<p class="def">Banni un utilisateur d’un plot. Il ne pourras plus y accéder tant que vous ne le débannissez pas avec la commande /plot remove.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot remove   </p>
+				<p class="def">Retire un joueur du plot. Si c’est un joueur autorisé à construire, il ne sera plus autorisé à construire, et si c’est un joueur banni, il sera débanni.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot merge     </p>
+				<p class="def">Combine le plot sur lequel vous vous trouvez avec un plot adjacent. Vous devez posséder l’autre plot pour pouvoir faire ceci. Vous pouvez spécifier une direction (n,e,w,s ou all) et spécifier si vous souhaitez retirer la route en ajoutant true ou false.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot unlink    </p>
+				<p class="def">Sépare des plots qui ont été combinés.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot setflag     </p>
+				<p class="def">Défini les flags d’un plot. Pour la liste des flag, utilisez /plot flag list. Pour plus d’information sur les flags, voir Flags.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot done    </p>
+				<p class="def">Marque un plot comme terminé.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot continue    </p>
+				<p class="def">Permet de continuer un plot qui était marqué comme terminé. . </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot setdescription     </p>
+				<p class="def">Défini la description du plot.  </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot sethome     </p>
+				<p class="def">Défini le point de téléportation du plot lorsqu’on s’y téléporte en utilisant /plot visit. </p>
+			</div>
+			<div class="definition">
+				<p class="cmd">/plot toggle     </p>
+				<p class="def"> Active / désactive des paramètres utilisateurs :
+				<ul>
+					<li>worldedit : WorldEdit</li>
+					<li>chat : Le chat de plot</li>
+					<li>titles : Le texte affiché à l’écran quand on rentre dans un plot</li>
+					<li>time : Le changement de temps quand on rentre dans un plot avec un temps spécifique paramétré.</li>
+				</ul>
+				 </p>
+			</div>
+			<div id="C">
+				<p class="T">Discussion</p>
+				<div class="definition">
+					<p class="cmd">/plot chat </p>
+					<p class="def">Active/désactive le chat de plot (chat visible uniquement sur le plot).  </p>
+				</div>
+			</div>
+			<div id="A">
+				<p class="T">Apparence</p>
+				<div class="definition">
+					<p class="cmd">/plot set  </p>
+					<p class="def">Défini une valeur d’un plot. Permet de définir le biome, le nom et les flags.  </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot music </p>
+					<p class="def">Permet de choisir une musique qui sera jouée sur le plot.   </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot clear  </p>
+					<p class="def">Réinitialise le plot et le remet à son état de départ. Cette action est irréversible. Cette commande demande une confirmation.  </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot setbiome  </p>
+					<p class="def">⚠️ Commande pour utilisateur avancé. Utilisez plutôt le menu si vous n’êtes pas sûr de vous. Défini le biome du plot.   </p>
+				</div>
+			</div>
+			<div id="I">
+				<p class="T">Informations</p>
+				<div class="definition">
+					<p class="cmd">/plot help </p>
+					<p class="def">Affiche le menu d’aide du plugin.  </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot confirm   </p>
+					<p class="def">Confirme une action lorsqu’une confirmation est demandée.    </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot info  </p>
+					<p class="def">Affiche des informations sur le plot sur lequel vous vous trouvez.    </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot list   </p>
+					<p class="def"> Liste les plots. Vous pouvez utiliser différents arguments :
+					<ul>
+						<li>forsale : Plots à vendre.</li>
+						<li>mine : Plots que vous possédez.</li>
+						<li>shared : Plots sur lesquels vous êtes autorisé à construire.</li>
+						<li>top : Plots les plus votés.</li>
+						<li>all : Tous les plots.</li>
+						<li>joueur : Tous les plots d’un joueur.</li>
+						<li>done : Plots terminés.</li>
+					</ul>
+				  </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot like   </p>
+					<p class="def">Met un like au plot sur lequel vous vous trouvez.</p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot unlike </p>
+					<p class="def">Retire votre like d’un plot.  </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot target </p>
+					<p class="def">Vise un plot avec votre compas.</p>
+				</div>
+			</div>
+			<div id="ADM">
+				<p class="T">Administration</p>
+				<div class="definition">
+					<p class="cmd">/plot copy  </p>
+					<p class="def">Copie un plot aux coordonnées précisées</p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot move </p>
+					<p class="def">Déplace un plot aux coordonnées précisées. </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot swap  </p>
+					<p class="def">Echange deux plots de place. </p>
+				</div>
+				<div class="definition">
+					<p class="cmd">/plot weanywhere </p>
+					<p class="def">Autorise l’utilisation de WorldEdit partout sur le monde (même sur les routes et les plots d’autres joueurs). </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

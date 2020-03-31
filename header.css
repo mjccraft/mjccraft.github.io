@@ -1,0 +1,46 @@
+header
+{
+	background-color: rgb(195,195,195);
+	display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+}
+
+
+/*Logo*/
+#logo img
+{
+	height: 80px;
+	width: 122px;
+	margin: 5px;
+}
+
+header nav ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+header nav li
+{
+	margin-right:2em;
+}
+
+header nav a
+{
+	font-family: impact,arial,serif;
+	font-size: 2em;
+	color: rgb(128,128,128);
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+
+header nav a:hover
+{
+	color: rgb(255,255,108);
+	border-bottom: 3px rgb(255,255,108) solid;
+}

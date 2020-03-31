@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="globaldoc.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<title></title>
+</head>
+<body>
+	<header>
+		<a href="hub.html" id="logo"><img src="img/MJC_logo_mini.png"></a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="doc.html">Documentation</a></li>
+				<li><a href="regles.html">Règles</a></li>
+				<li><a href="soon.html">Compte</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="contenu">
+		<h1 id="commandes-faction">Commandes faction</h1>
+		<h2 id="apercu-">Aperçu :</h2>
+		<p>/f</p>
+		<blockquote>
+		<p>Gérer les commandes de base des factions.</p>
+		</blockquote>
+		<p>/f ?,h,help [page]</p>
+		<blockquote>
+		<p>Demande de l’aide, affiche la liste des commandes.</p>
+		</blockquote>
+		<p>/f list [page]</p>
+		<blockquote>
+		<p>Affiche la liste des factions.</p>
+		</blockquote>
+		<p>/f top &lt;Catégorie&gt; [page]</p>
+		<blockquote>
+		<p>Affiche le classement des faction.</p>
+		</blockquote>
+		<p>/f f,faction [faction]</p>
+		<blockquote>
+		<p>Affiche les informations de votre faction ou de celle spécifiée.</p>
+		</blockquote>
+		<p>/f player [player]</p>
+		<blockquote>
+		<p>Affiche les informations de votre compte ou de celui spécifié.</p>
+		</blockquote>
+		<p>/f status [page] [faction] [sort]</p>
+		<blockquote>
+		<p>Affiche les statuts.</p>
+		</blockquote>
+		<p>/f join </p>
+		<blockquote>
+		<p>Rejoindre une faction.</p>
+		</blockquote>
+		<p>/f leave</p>
+		<blockquote>
+		<p>Quitter votre faction.</p>
+		</blockquote>
+		<p>/f map [on|off]</p>
+		<blockquote>
+		<p>Affiche la carte avec les territoires.</p>
+		</blockquote>
+		<h2 id="creation-faction-">Céation de faction :</h2>
+		<p>/f create,new </p>
+		<blockquote>
+		<p>Créer votre faction.</p>
+		</blockquote>
+		<p>/f name  [faction]</p>
+		<blockquote>
+		<p>Défini/remplace le nom fr votre faction.</p>
+		</blockquote>
+		<p>/f description </p>
+		<blockquote>
+		<p>Changer la description de votre faction.</p>
+		</blockquote>
+		<p>/f motd</p>
+		<blockquote>
+		<p>Affiche le message de faction.</p>
+		</blockquote>
+		<p>/f motd [new=read]</p>
+		<blockquote>
+		<p>Change le message de la faction.</p>
+		</blockquote>
+		<p>/f sethome </p>
+		<blockquote>
+		<p>Place un “home” de faction avec le nom spécifié.</p>
+		</blockquote>
+		<p>/f unsethome </p>
+		<blockquote>
+		<p>Supprimme un home de faction</p>
+		</blockquote>
+		<h2 id="territoire-">Territoire :</h2>
+		<p>/f seeChunk,sc</p>
+		<blockquote>
+		<p>Affiche les bordures des chunks près de vous.</p>
+		</blockquote>
+		<p>/f territorytitles,tt [on|off]</p>
+		<blockquote>
+		<p>Affiche les noms des territoires.</p>
+		</blockquote>
+		<p>/f claim</p>
+		<blockquote>
+		<p>Déclare que les chunks sélectionnés appartiennent à votre faction.</p>
+		</blockquote>
+		<p>/f claim one</p>
+		<blockquote>
+		<p>Déclare que le chunk sur lequel vous vous trouvez appartient à votre faction.</p>
+		</blockquote>
+		<p>/f claim auto</p>
+		<blockquote>
+		<p>Déclare que les chunks sur lesquels vous passez appartiennent à votre faction.</p>
+		</blockquote>
+		<p>/f claim fill</p>
+		<blockquote>
+		<p>Déclare que tous les chunks entre deux points sélectionnés appartiennent à votre faction.</p>
+		</blockquote>
+		<p>/f claim square [côté]</p>
+		<blockquote>
+		<p>Déclare que tous les chunks dans un carré de X chunks de coté appartiennent à votre faction.</p>
+		</blockquote>
+		<p>/f claim circle [rayon]</p>
+		<blockquote>
+		<p>Déclare que tous les chunks dans un cercle de X chunks de rayon appartiennent à votre faction.</p>
+		</blockquote>
+		<p>/f unclaim</p>
+		<blockquote>
+		<p>Restaure les chunks sélectionnés.</p>
+		</blockquote>
+		<p>/f unclaim one</p>
+		<blockquote>
+		<p>Restaure le chunk sur lequel vous êtes.</p>
+		</blockquote>
+		<p>/f unclaim auto</p>
+		<blockquote>
+		<p>restaure les chunks sur lesquels vous passez.</p>
+		</blockquote>
+		<p>/f unclaim fill</p>
+		<blockquote>
+		<p>Restaure les chunks entre deux points sélectionnés.</p>
+		</blockquote>
+		<p>/f unclaim square [côté]</p>
+		<blockquote>
+		<p>Restaure les chunks dans un carré de X chunks de coté.</p>
+		</blockquote>
+		<p>/f unclaim circle [rayon]</p>
+		<blockquote>
+		<p>Restaure les chunks dans un cercle de X chunks de rayon.</p>
+		</blockquote>
+		<p>/f unclaim all</p>
+		<blockquote>
+		<p>Restaure tous les chunks de la faction.</p>
+		</blockquote>
+		<h2 id="gestion-des-membres-">Gestion des membres :</h2>
+		<p>/f invite</p>
+		<blockquote>
+		<p>Gère les invitations.</p>
+		</blockquote>
+		<p>/f invite list [page]</p>
+		<blockquote>
+		<p>Affiche la liste des invitations envoyées.</p>
+		</blockquote>
+		<p>/f invite add </p>
+		<blockquote>
+		<p>Invite un joueur dans votre faction.</p>
+		</blockquote>
+		<p>/f invite remove &lt;player|all&gt;</p>
+		<blockquote>
+		<p>Annule l’invitation envoyée à un joueur ou toutes les invitations.</p>
+		</blockquote>
+		<p>/f kick </p>
+		<blockquote>
+		<p>Exclu un joueur de votre faction.</p>
+		</blockquote>
+		<h2 id="grades-">Grades :</h2>
+		<p>/f rank</p>
+		<blockquote>
+		<p>Gérer les grades de votre faction.</p>
+		</blockquote>
+		<p>/f rank set  </p>
+		<blockquote>
+		<p>Attribuer un grade à un joueur (<code>Leader</code>: Chef, <code>Officer</code>: Officier, <code>Member</code>: Membre, <code>Recruit</code>: Recrue).</p>
+		</blockquote>
+		<p>/f rank show </p>
+		<blockquote>
+		<p>Affiche le grade d’un joueur.</p>
+		</blockquote>
+		<p>/f rank list [page]</p>
+		<blockquote>
+		<p>Affiche les grades des membres de votre faction.</p>
+		</blockquote>
+		<h2 id="argent">Argent</h2>
+		<p>/f money</p>
+		<blockquote>
+		<p>Gérer l’argent de votre faction.</p>
+		</blockquote>
+		<p>/f money balance</p>
+		<blockquote>
+		<p>Affiche l’argent de votre faction.</p>
+		</blockquote>
+		<p>/f money deposit </p>
+		<blockquote>
+		<p>Déposer un montant de X€ dans la banque de votre faction.</p>
+		</blockquote>
+		<p>/f money withdraw </p>
+		<blockquote>
+		<p>Retirer un montant de X€ de la banque de votre faction.</p>
+		</blockquote>
+		<p>/f money ff  &lt;Nom_de_votre_faction&gt; &lt;Nom_de_l’autre_faction&gt;</p>
+		<blockquote>
+		<p>Transfert un montant de X€ de votre faction à une autre faction.</p>
+		</blockquote>
+		<p>/f money fp  &lt;Nom_de_votre_faction&gt; </p>
+		<blockquote>
+		<p>Transfert d’un montant de X€ de votre faction à un joueur.</p>
+		</blockquote>
+		<h2 id="relations-">Relations :</h2>
+		<p>/f relation</p>
+		<blockquote>
+		<p>Gérer les relations entre factions.</p>
+		</blockquote>
+		<p>/f relation set  </p>
+		<blockquote>
+		<p>Demande un statut de relation à entre votre faction et une autre. (Ally|Truce|Neutral|Enemy)</p>
+		</blockquote>
+		<p>/f relation liste [page]</p>
+		<blockquote>
+		<p>Affiche la liste des relations entre votre factions et les autres.</p>
+		</blockquote>
+		<p>/f relation wishes [page]</p>
+		<blockquote>
+		<p>Affiche les demandes de relation entre votre faction et les autres.</p>
+		</blockquote>
+		<h2 id="warps-">Warps :</h2>
+		<p>/f warp go &lt;Nom_du_warp&gt;</p>
+		<blockquote>
+		<p>Téléporte à un warp.</p>
+		</blockquote>
+		<p>/f warp list [page]</p>
+		<blockquote>
+		<p>Affiche la liste des warps de votre faction.</p>
+		</blockquote>
+		<p>/f warp add,create &lt;Nom_du_warp&gt;</p>
+		<blockquote>
+		<p>Créer un nouveau warp de faction.</p>
+		</blockquote>
+		<p>/f warp remove &lt;Nom_du_warp&gt;</p>
+		<blockquote>
+		<p>Supprime un warp de faction.</p>
+		</blockquote>
+		<h2 id="acces-">Accès :</h2>
+		<p>/f access</p>
+		<blockquote>
+		<p>Gérer les accès.</p>
+		</blockquote>
+		<p>/f access view</p>
+		<blockquote>
+		<p>Voir les accès.</p>
+		</blockquote>
+		<p>/f access player </p>
+		<blockquote>
+		<p>Accorder un accès à un joueur.</p>
+		</blockquote>
+		<h2 id="flags-">Flags :</h2>
+		<p><em>Les flags sont les propriétés de la faction. Par exemple, l’activation du pvp entre membres est un flag</em></p>
+		<p>/f flag</p>
+		<blockquote>
+		<p>Gérer les flags de la faction.</p>
+		</blockquote>
+		<p>/f flag list [page]</p>
+		<blockquote>
+		<p>Affiche la liste des flags.</p>
+		</blockquote>
+		<p>/f flag show [page]</p>
+		<blockquote>
+		<p>Affiche la liste des flags de votre faction.</p>
+		</blockquote>
+		<p>/f flag set  &lt;yes|no&gt;</p>
+		<blockquote>
+		<p>Définir un flag de la faction.</p>
+		</blockquote>
+		<h2 id="autre-">Autre :</h2>
+		<p>/f unstuck</p>
+		<blockquote>
+		<p>Téléporte dans la zone déserte la plus proche.</p>
+		</blockquote>
+		<p>/f disband  [confirmation]</p>
+		<blockquote>
+		<p>Dissous une faction.</p>
+		</blockquote>
+		<h2 id="explications-plus-detaillees-">Explications détaillées :</h2>
+		<p><strong>La partie suivante à été traduite avec automatiquement et peut comporter des erreurs. En cas de doute, n’hésitez pas à contecter un administrateur.</strong></p>
+		<p>Le plugin permet aux joueurs de se regrouper dans des factions, qui revendiquent des territoires et construisent leurs bases.<br>
+		Ce plugin possède un système d’<a href="https://mjccraft.github.io/lexique#griefing">antigriefing</a> qui empêche les joueurs n’appartenant pas à une faction de construire dans leur territoire.<br>
+		Les <a href="https://mjccraft.github.io/doc/survie/faction#grades-">grades</a> permettent de gérer les permissions des membres d’une faction.</p>
+		<p>La commande <code>/f</code> permet d’afficher la liste de toutes les commandes liées aux factions. Entrez <code>/f ? 2</code> pour afficher la seconde page.<br>
+		La commande <code>/f list</code> affiche la liste des faction sur plusieurs pages. Si vous voulez  avoir un classement plus détaillé, entrez la commande <code>/f top</code> qui affichera le classement des factions dans des catégories. Pour obtenir plus d’informations sur votre faction entrez <code>/f f</code>, mais si vous voulez plus d’informations sur une autre faction entrez <code>/f f [Nom_de_la_faction]</code>.</p>
+		<p>Egalement, la commande <code>/f player</code> affichera les informations de votre compte. Si vous voulez les informations sur le compte d’un autre joueur entrez <code>/f palyer [Nom_du_joueur]</code>. Si vous voulez les informations quant aux joueurs présents dans votre faction, entrez <code>/f status [page]</code>, la liste s’affichera sur plusieurs pages donc choisissez la page que vous voulez observer.</p>
+		<p>Une faction peut posséder des <a href="https://mjccraft.github.io/lexique#warps">warps</a>. Pour voir les warps de votre faction entrez <code>/warp list</code>. Pour vous téléporter à un warp entrez <code>/f warp go &lt;Nom_du_warp&gt;</code>. Si vous possédez la permission, vous pouvez créer/retirer des warps avec l’aide des commandes <code>/f warp add</code> et <code>/f warp remove</code>. Il y a un maximum de warps par faction défini par les administrateurs (renseigner plus tard).</p>
+		<p>Pour changer la description publique de votre faction entrez <code>/f desc &lt;Description_de_la_faction&gt;</code>. Vous pouvez voir le message journalier de votre faction en entrant <code>/f motd</code> et vous pouvez en créer un nouveau en entrant <code>/f motd &lt;Nouveau_motd&gt;</code>. Vous pouvez utiliser des couleurs dans vos messages journaliers.</p>
+		<p>Vous pouvez placer un <a href="https://mjccraft.github.io/lexique#home">home</a> de faction en entrant <code>/f sethome Nom_du_home</code>, le home se placera à votre position. Vous pouvez en supprimer un en utilisant la commande <code>/f unsethome Nom_du_home</code>.</p>
+		<p>Pour inviter un joueur dans votre faction, entrez <code>/f invite add &lt;pseudo&gt;</code>, cela ajoutera une invitation à la liste d’invitations, que vous pouvez consulter en utilisant <code>/f invite list</code>. Vous pouvez supprimer une invitation avec <code>/f invite remove &lt;pseudo&gt;</code> ou toutes les supprimer avec <code>/f invite remove all</code>.<br>
+		Entrez la commande <code>/f kick &lt;pseudo&gt;</code> afin d’exclure un joueur de votre faction.</p>
+		<p>Toutes les factions ont a disposition un système de grade. Les grades disponibles sont Chef, Officier, Membre et Recrue.<br>
+		Pour voir la liste des grades disponibles, utilisez <code>/f rank list [page]</code>. Pour attribuer un grade à un joueur, utilisez la commande <code>/f rank set &lt;pseudo&gt; &lt;grade&gt;</code>. Si vous voulez afficher le grade d’un joueur entrez <code>/f rank show &lt;pseudo&gt;</code>.</p>
+		<p>La commande <code>/f money balance</code> permet d’afficher le montant du compte de votre faction. Pour déposer de l’argent sur le compte de votre faction, entrez <code>/f money deposite &lt;montant&gt;</code>. Pour retirer de l’argent du compte de votre faction, entrez <code>/f money withdraw &lt;Montant&gt;</code>. Pour transférer de l’argent d’une faction à un joueur, utilisez la commande <code>/f money fp &lt;Montant&gt; &lt;Faction&gt; &lt;Pseudo&gt;</code>. Pour transférer de l’argent d’une faction à une autre, utilisez la commande <code>/f money ff &lt;Montant&gt; &lt;Votre faction&gt; &lt;L'autre faction&gt;</code>.</p>
+		<p>Les territoires de faction sont basés sur un système de <a href="https://mjccraft.github.io/lexique#chunks">chunks</a> qui peuvent êtres revendiqués par une faction. Vous pouvez voir les bordures de vos chunks en utilisant la commande <code>/f sc</code>. Utilisez la même commande afin de les masquer. Entrez <code>/f claim one</code> pour revendiquer le chunk sur lequel vous vous trouvez. Si vous souhaitez revendiquer tout les chunks sur lesquels vous passez, utilisez la commande <code>/f claim auto</code>, puis pour arrêter entrez de nouveau cette commande. Si, une fois avoir revendiqué vos territoires sous la forme d’un cercle, vous vous rendez compte qu’il vous en manque à l’intérieur du cercle, utilisez la commande <code>/f claim fill</code>. Si vous voulez revendiquez un territoire sous forme de cercle ou de carré, au lieu de marcher, utilisez la commande <code>/f claim circle [rayon]</code> ou <code>/f claim square [rayon]</code>. Cette commande revendiquera tout les chunks sur un rayon de X chunks depuis votre position (le chunk sur lequel vous vous trouvez).</p>
+		<p>Vous ne pouvez revendiquer des territoires que lorsque vous avez du <a href="https://mjccraft.github.io/lexique#pouvoir">pouvoir</a>. Si vous voulez revendiquer un nouveau territoire mais que vous n’avez plus de pouvoir, vous devez abandonnez d’anciens territoires. Pour faire cela simplement, rendez vous sur le chunk dont vous voulez vous débarrasser et effectuez <code>/f unclaim</code>.</p>
+		<p>Lorsque vous désirez autoriser l’accès à quelqu’un sur certains chunks au lieu de le rendre public à toute autre faction, entrez sur le chunk en question <code>/f access player &lt;pseudo&gt; yes</code>. De la même manière, si vous voulez refuser l’accès à un joueur sur certains chunks, utilisez la commande <code>/f access player &lt;pseudo&gt; no</code>sur le chunk en question. Vous pouvez effectuer la même chose mais cette fois ci avec l’entièreté d’une faction. Par exemple, si vous êtes allié avec une faction et que vous désirez autoriser ses membres à pénétrer sur certains de vos chunks, entrez <code>/f access faction &lt;Nom_de_la_faction&gt; yes</code>, et de même si vous voulez lui interdire de pénétrer sur certains de vos chunks, entrez <code>/f access faction &lt;Nom_de_la_faction&gt; no</code>. Attention, ces commandes autorisent/interdisent l’accès uniquement sur le chunk sur lequel vous vous trouvez. Pour voir la liste des autorisations et des interdictions d’accès sur le chunk où vous vous trouvez, entrez <code>/f access view</code>.</p>
+		<p>Deux factions peuvent avoir des relations. Par défaut, deux faction ont une relation neutre (neutral), mais elle peut être changer par ennemie (enemy), allié (ally) ou trêve (truce). La relation définie pour deux factions correspond à la demande la plus basse. Par exemple, si la faction 1 demande à être alliée alors que la faction 2 demande à être ennemie, la relation définie sera ennemie.</p>
+		<p>Voeux|<strong>Enemie</strong>|<strong>Neutre</strong>|<strong>Trêve</strong>|<strong>Allié</strong><br>
+		<strong>Enemie</strong>|Enemie|Enemie|Enemie|Enemie<br>
+		<strong>Neutre</strong>|Enemie|Neutre|Neutre|Neutre<br>
+		<strong>Trêve</strong>|Enemie|Neutre|Trêve|Trêve<br>
+		<strong>Allié</strong>|Enemie|Neutre|Trêve|Allié</p>
+		<p>Afin de faire une requête de relation à une faction, entrez <code>/f relation set &lt;Nom_de_la_faction&gt; &lt;Nom_de_la_relation&gt;</code>. Si vous désirez voir la liste de vos relations, entrez <code>/f relation list</code>, pour afficher la page suivante, entrez <code>/f relation list 2</code>. Afin de voir la liste des relations précises, entrez <code>/f relation list &lt;Nom_de_la_relation&gt;</code> ou pour voir la relation que vous avez défini avec une autre faction, entrez <code>/f relation list &lt;Nom_de_la_faction&gt;</code>.</p>
+		<p>Les factions possèdent un système de permissions qui défini qui peut faire quoi au sein de celle-ci. Les permissions peuvent être attribuées à un grade, un joueur, une relation ou à un joueur/grade dans une autre faction. Pour afficher pour la liste des permissions  entrez <code>/f perm list</code>. Pour afficher qui possède une permission, entrez <code>/f perm list &lt;Nom_de_la_permission&gt;</code>. Si vous voulez savoir quelles permissions ont été attribuées à un joueur, entrez <code>/f perm viewall &lt;Nom_du_joueur&gt;</code>. De même, si vous voulez savoir quelles permissions possède un grade, entrez <code>/f perm view &lt;Nom_du_grade&gt;</code>. Pour donner/retirer une permission à un joueur / un grade, entrez la commande <code>/f perm set &lt;Nom_de_la_permission&gt; &lt;Pseudo|Grade&gt; &lt;yes/no&gt;</code>.</p>
+		<p>Afin d’afficher la liste des <a href="https://mjccraft.github.io/lexique#flag">flags</a>, entrez <code>/f flag list</code>. Pour définir un flag de faction, entrez <code>/f flag set &lt;Flag&gt; &lt;yes/no&gt;</code>.</p>
+		<h2 id="source-">Source :</h2>
+		<p>Plugin faction : Faction 3<br>
+		<a href="https://muj.dk/factions/">Lien original</a></p>
+	</div>
+</body>
+</html>
