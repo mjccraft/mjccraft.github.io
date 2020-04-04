@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Amaranth:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="shop.css">
+	<title>Le magasin</title>
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css"/> 
+	<script type="text/javascript" src="script/menuderoulant.js"></script>
+	<link rel="stylesheet" type="text/css" href="/header.css">
+	<script language="JavaScript">
+		<!--
+		//PLF-/
+		function menuderoulant(selection){
+		window.location=selection.options[selection.selectedIndex].value;
+		}
+		//-->
+	</script>
+</head>
+<body>
+	<header>
+		<a href="/index" id="logo"><img src="/img/MJC_logo_mini.png"></a>
+		<nav>
+			<ul>
+				<li><a href="/index">Accueil</a></li>
+				<li><a href="/doc">Documentation</a></li>
+				<li><a href="/regles">Règles</a></li>
+				<li><a href="/soon">Compte</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="content">
+		<p class="title">Le Shop</p>
+		<form class="selector" name="form1">
+			<div align="center">
+				<select class="choice" name="menu" onChange="menuderoulant(this)">
+					<option value="#intro">Introduction</option>
+					<option value="#market">Le marché</option>
+					<option value="#ownMarket">Votre économie</option>
+				</select>
+			</div>
+		</form>
+		<div id="intro">
+			<p class="smallTitle">Introduction :</p>
+			<p>Le serveur MJCCraft dispose d'un système monétaire. Celui-ci fonctionne de plusieurs façons. D'abord les joueurs peuvent marchander avec une banque virtuelle à fonds sans limites : Le serveur lui-même. Ainsi, vous pouvez acheter et vendre autant de choses que vous pouvez sans jamais être bloqué par celui-ci. Mais les prix sont réfléchis afin que les joueurs ne se réfèrent pas qu’à celui-ci. C’est pourquoi les joueurs peuvent également marchander entre eux afin de toucher des prix plus atteignables. Le système monétaire est construit de différentes manières qui sont les suivantes :</p>
+		</div>
+		<div id="market">
+			<p class="smallTitle">Le Marché</p>
+			<p>Le marché est une salle dans le "spawn" du monde survie aux coordonnées suivantes : X = 9506 ; Y = 72 ; Z = 1001514.
+			<p>Ce marché vous permet de marchander avec le serveur. Le marché dispose de quatre salles à thèmes : Minéraux, Redstone, Divers et Blocks décoratifs. Ces salles ne marchandent pas tout les objets disponnibles du jeu : Une sélection réfléchie a été effectuée par les administrateurs afin que les joueurs ne se réfèrent pas uniquement à cette salle. Cette salle vous présente deux types de quantités possibles à aquérir ou à vendre : 1 objet à la fois ou par "stack" (64 objets / 16 objets (dépend de la quantité stockable par objet)). Mais certains objets ne peuvent être disponibles que par stocks de 1 (On ne peut pas les accumulés dans un même emplacement).</p>
+
+			<span id="sl_play" class="sl_command">&nbsp;</span>
+			<span id="sl_pause" class="sl_command">&nbsp;</span>
+			<span id="sl_i1" class="sl_command sl_i">&nbsp;</span>
+			<span id="sl_i2" class="sl_command sl_i">&nbsp;</span>
+			<span id="sl_i3" class="sl_command sl_i">&nbsp;</span>
+			<span id="sl_i4" class="sl_command sl_i">&nbsp;</span>
+			
+			
+			
+			<section id="slideshow">
+			
+				<a class="commands prev commands1" href="#sl_i4" title="Go to last slide">&lt;</a>
+				<a class="commands next commands1" href="#sl_i2" title="Go to 2nd slide">&gt;</a>
+				<a class="commands prev commands2" href="#sl_i1" title="Go to 1rst slide">&lt;</a>
+				<a class="commands next commands2" href="#sl_i3" title="Go to 3rd slide">&gt;</a>
+				<a class="commands prev commands3" href="#sl_i2" title="Go to 2nd slide">&lt;</a>
+				<a class="commands next commands3" href="#sl_i4" title="Go to 4th slide">&gt;</a>
+				<a class="commands prev commands4" href="#sl_i3" title="Go to 3rd slide">&lt;</a>
+				<a class="commands next commands4" href="#sl_i1" title="Go to first slide">&gt;</a>
+				
+				<a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+				<a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
+				
+				<div class="container">
+					<div class="c_slider"></div>
+					<div class="slider">
+						<figure>
+							<img src="/img/2020-04-01_19.46.43.png" alt="" width="640" height="310" />
+							<figcaption>Apperçu général</figcaption>
+						</figure><!--
+						--><figure>
+							<img src="/img/2020-04-01_19.50.20.png" alt="" width="640" height="310" />
+							<figcaption>Salle des blocks décoratifs</figcaption>
+						</figure><!--
+						--><figure>
+							<img src="/img/2020-04-01_19.50.29.png" alt="" width="640" height="310" />
+							<figcaption>Salle des minéraux</figcaption>
+						</figure><!--
+						--><figure>
+							<img src="/img/2020-04-01_19.50.41.png" alt="" width="640" height="310" />
+							<figcaption>Salle objets divers</figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<span id="timeline"></span>
+				
+				<ul class="dots_commands"><!--
+					--><li><a title="Show slide 1" href="#sl_i1">Slide 1</a></li><!--
+					--><li><a title="Show slide 2" href="#sl_i2">Slide 2</a></li><!--
+					--><li><a title="Show slide 3" href="#sl_i3">Slide 3</a></li><!--
+					--><li><a title="Show slide 4" href="#sl_i4">Slide 4</a></li>
+				</ul>
+				
+			</section>
+			<p>Le système d'achat et de vente fonctionnent à l'aide de panneaux :</p>
+			<ul>
+				<li>Click droit pour acheter.</li>
+				<li>Click gauche pour vendre.</li>
+			</ul>
+			<img class="panneauxExpliques" src="/img/panneau.png"></img>
+		</div>
+		<div id="ownMarket">
+			<p class="smallTitle">Votre économie</p>
+			<p>Vous pouvez créer votre propre marché dans votre base afin de vendre ce que vous désirez mais surtout pouvoir acheter à des prix plus bas des objets dont vous auriez besoin. Pour ce faire il vous suffit d'un panneau et d'un coffre. Nous vous conseillons fortement de "Claim" le chunk dans lequel vous placez votre marché. Pour commencer, placer un coffre (double ou simple peu importe). Puis placer un panneau sur un block adjacent au coffre. Sur le panneau il vous faut entrer avec la syntaxe suivante :</p>
+			<ul>
+				<li>Première ligne  : Ne rien entrer</li>
+				<li>Deuxième ligne  : 1 --> La quantité</li>
+				<li>Troisième ligne : B 100 : S 50 --> Correspond au prix d'achat et S correspond au prix de vente</li>
+				<li>Quatrième ligne : ? --> Pour simplifier</li>
+			</ul>
+			<p>Ensuite, prenez l'objet que vous voulez commercer et effectuez un click droit sur le panneau. Celui-ci devrait prendre l'apparence suivante :</p>
+			<ul>
+				<li>Première ligne  : "Votre Pseudo" </li>
+				<li>Deuxième ligne  : 1</li>
+				<li>Troisième ligne : B 5000 : S 2000 </li>
+				<li>Quatrième ligne : "Nom de l'objet" </li>
+			</ul>
+			<p>Pour finir, remplissez le coffre avec l'objet que vous voulez vendre. Cela donne :</p>
+				<img class="panneauxExpliques" src="/img/2020-04-02_11.35.44.png" />
+		</div>
+	</div>
+</body>
+</html>
