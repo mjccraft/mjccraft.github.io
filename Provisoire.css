@@ -1,0 +1,23 @@
+div.content{
+	background-color:#FAFAFA;
+	display:block;
+	padding:50px;
+}
+div.Warning{
+	border: red solid 1px;
+	width:100%;
+}
+div.Navigation{
+	width:100%;
+	text-align:center;
+}
+p.Warn{
+	color:red;
+	font-size:20px;
+	font-weight:bolder;
+	text-align:center;
+}
+
+p.lien{
+	text-align: center;
+}
